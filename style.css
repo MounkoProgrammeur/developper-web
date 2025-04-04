@@ -1,3 +1,5 @@
+/*https://mounkoprogrammeur.github.io/developper-web/ */
+
 * {
     margin: 0;
     padding: 0;
@@ -256,7 +258,7 @@
    #About {
      display: flex;
      min-height: 70vh;
-     background-color: #f8f9fa;
+     background-color: var(--bg-dark);
      justify-content: space-around;
      align-items: center;
      padding: 80px 20px;
@@ -269,7 +271,7 @@
      top: 20px;
      text-align: center;
      width: 100%;
-     color: var(--primary-color);
+     color: var(--secondary-color);
      font-size: 2.5rem;
      margin-bottom: 30px;
    }
@@ -313,7 +315,7 @@
    }
    
    .box {
-     background: url('./img/aa.jpg');
+     background: url('./img/1725449792800.jpg');
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
@@ -331,42 +333,61 @@
     top: 0px;
     text-align: center;
     width: 100%;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    margin: 20px;
    }
    #Services .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--text-muted);
     flex-wrap: wrap;
-    gap: 10px;
    }
    #Services .container .box1{
-    width: 100%;
+     width: 100%;
      max-width: 700px;
      box-shadow: 0 10px 25px var(--shadow-color);
      padding: 40px;
      border-radius: 15px;
      margin: 20px;
      flex: 1;
-     line-height:2 ;
+     line-height:1.5 ;
      background-color: white;
+     margin: 0.5rem;
      
    }
    .container .box1 h3{
     position: absolute;
     margin-bottom: 5rem;
-    color: var(--accent-color);
-    font-size: 20px;
+    color: var(--text-dark);
+    font-size: 23px;
+    font-weight: bold;
 
    }
    .container .box1 p{
-    margin-top: 60px;
+    margin-top: 50px;
    }
+  
+  .container .box1 a{
+    margin-top: 2rem;
+    text-decoration: none;
+    background: var(--primary-color);
+    padding: 5px 20px;
+    color: var(--text-light);
+    border-radius: 50px; 
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    letter-spacing: 1px;
 
+  }
+  .container .box1 a:hover{
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
    @media screen and (max-width: 992px) {
      .head {
