@@ -1,4 +1,4 @@
-/*https://mounkoprogrammeur.github.io/developper-web/ */
+/* https://developpeur-web-woad.vercel.app/ */
 
 * {
     margin: 0;
@@ -274,7 +274,7 @@
      color: var(--secondary-color);
      font-size: 2.5rem;
      margin-bottom: 30px;
-     margin-left: 200px;
+     
      
    }
    
@@ -299,6 +299,7 @@
    .description p {
      margin-bottom: 15px;
      color: var(--text-dark);
+     font-size: 18px;
    }
    
    .photo {
@@ -335,11 +336,15 @@
   font-size: 2.5rem;
   margin-bottom: 40px;
   display: inline-block;
-  border-bottom: 3px solid var(--secondary-color); /* Soulignement */
   padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
    
 }
-
+.nom{
+  font-size: 25px;
+}
 #Services .container {
   display: flex;
   justify-content: center;
@@ -375,6 +380,7 @@
   margin-bottom: 20px;
   line-height: 1.5;
   color: #444;
+  
 }
 
 .container .box1 a {
@@ -424,7 +430,7 @@
      }
    }
    
-   /* Mobiles */
+  
    @media screen and (max-width: 768px) {
      .menu-toggle {
        display: flex;
@@ -489,39 +495,7 @@
      }
    }
 
-    /* Animation au chargement */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .animate-on-load {
-      opacity: 0; /* Commence invisible */
-      animation: fadeIn 1s ease-out forwards;
-    }
-
-    /* Délai pour chaque élément */
-    .animate-on-load:nth-child(1) { animation-delay: 0.1s; }
-    .animate-on-load:nth-child(2) { animation-delay: 0.3s; }
-    .animate-on-load:nth-child(3) { animation-delay: 0.5s; }
-
-    /* Animation au scroll */
-    .animate-on-scroll {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-    }
-
-    .animate-on-scroll.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    
     footer{
       background-color: #111;
       color: #fff;

@@ -137,3 +137,15 @@ body{
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.social-icons a {
+
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #252222;
+  transform: scale(1.2);
+}
